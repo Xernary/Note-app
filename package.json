@@ -1,0 +1,15 @@
+{
+  "name": "Notebook",
+  "version": "1.0.0",
+  "description": "Utility app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Xernary",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^8.0.3",
+    "electron-packager": "^14.2.1"
+  }
+}

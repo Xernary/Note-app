@@ -1,0 +1,169 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/112ab75a68.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div-text">
+    </div>
+
+        <!--Orario-->
+        <div id="div-orario" class="orario" status="visible">
+            <div id="draggable" stat="visible" draggable="true">
+
+            </div>
+                <div id="lista-ore">
+                    <div class="giorno" id="day-1">
+                        <h2 class="h-giorno">LUNEDI</h2>
+                        <p class="materia prima-ora">Inglese</p>
+                        <p class="materia seconda-ora">Scienze</p>
+                        <p class="materia terza-ora">Italiano</p>
+                        <p class="materia quarta-ora">Matematica</p>
+                        <p class="materia quinta-ora">Fisica</p>
+                    </div>
+                    <div class="giorno" id="day-2">
+                        <h2 class="h-giorno">MARTEDI</h2>
+                        <p class="materia prima-ora">Matematica</p>
+                        <p class="materia seconda-ora">Motoria</p>
+                        <p class="materia terza-ora">Informatica</p>
+                        <p class="materia quarta-ora">Italiano</p>
+                        <p class="materia quinta-ora">Italiano</p>
+                    </div>
+                    <div class="giorno" id="day-3">
+                        <h2 class="h-giorno">MERCOLEDI</h2>
+                        <p class="materia prima-ora">Matematica</p>
+                        <p class="materia seconda-ora">Fisica</p>
+                        <p class="materia terza-ora">Filosofia</p>
+                        <p class="materia quarta-ora">Arte</p>
+                        <p class="materia quinta-ora">Scienze</p>
+                    </div>
+                    <div class="giorno" id="day-4">
+                        <h2 class="h-giorno">GIOVEDI</h2>
+                        <p class="materia prima-ora">Scienze</p>
+                        <p class="materia seconda-ora">Scienze</p>
+                        <p class="materia terza-ora">Religione</p>
+                        <p class="materia quarta-ora">Motoria</p>
+                        <p class="materia quinta-ora">Inglese</p>
+                    </div>
+                    <div class="giorno" id="day-5">
+                        <h2 class="h-giorno">VENERDI</h2>
+                        <p class="materia prima-ora">Matematica</p>
+                        <p class="materia seconda-ora">Fisica</p>
+                        <p class="materia terza-ora">Storia</p>
+                        <p class="materia quarta-ora">Disegno</p>
+                        <p class="materia quinta-ora">Italiano</p>
+                    </div>
+                    <div class="giorno" id="day-6">
+                        <h2 class="h-giorno">SABATO</h2>
+                        <p class="materia prima-ora">Informatica</p>
+                        <p class="materia seconda-ora">Filosofia</p>
+                        <p class="materia terza-ora">Storia</p>
+                        <p class="materia quarta-ora">Inglese</p>
+                        <p class="materia quinta-ora">Scienze</p>
+                    </div>
+                </div>
+        </div>
+
+        <!--Compiti-->
+        <div class="compiti tab_1" status="hidden">
+            <h3 class="compiti-materia" contenteditable="true">
+                (Materia)
+            </h3>
+            <textarea class="compiti-text" cols="30" rows="10"></textarea>
+            <div class="div-btn">
+                <button class="btn close-btn btn_1" onclick=delete_tab(1)>
+                    <i class="fas fa-times fa-2x close-icon"></i>
+                </button>
+            </div>
+            
+        </div>
+
+        <div class="compiti tab_2" status="hidden">
+            <h3 class="compiti-materia" contenteditable="true">
+                (Materia)
+            </h3>
+            <textarea class="compiti-text" cols="30" rows="10"></textarea>
+            <div class="div-btn">
+                <button class="btn close-btn btn_2" onclick=delete_tab(2)>
+                    <i class="fas fa-times fa-2x close-icon"></i>
+                </button>
+            </div>
+            
+        </div>
+
+        <div class="compiti tab_3" status="hidden">
+            <h3 class="compiti-materia" contenteditable="true">
+                (Materia)
+            </h3>
+            <textarea class="compiti-text" cols="30" rows="10"></textarea>
+            <div class="div-btn">
+                <button class="btn close-btn btn_3" onclick=delete_tab(3)>
+                    <i class="fas fa-times fa-2x close-icon"></i>
+                </button>
+            </div>
+            
+        </div>
+
+        <div class="compiti tab_4" status="hidden">
+            <h3 class="compiti-materia" contenteditable="true">
+                (Materia)
+            </h3>
+            <textarea class="compiti-text" cols="30" rows="10"></textarea>
+            <div class="div-btn">
+                <button class="btn close-btn btn_4" onclick=delete_tab(4)>
+                    <i class="fas fa-times fa-2x close-icon"></i>
+                </button>
+            </div>
+            
+        </div>
+
+        <div class="compiti tab_5" status="hidden">
+            <h3 class="compiti-materia" contenteditable="true">
+                (Materia)
+            </h3>
+            <textarea class="compiti-text" cols="30" rows="10"></textarea>
+            <div class="div-btn">
+                <button class="btn close-btn btn_5" onclick=delete_tab(5)>
+                    <i class="fas fa-times fa-2x close-icon"></i>
+                </button>
+            </div>
+            
+        </div>
+
+       
+
+
+        <div class="sidebar" id="sidebar" status="closed">
+            <ul id="list">
+                <li class = "list-element" status="closed" id="hub">
+                    <i id="icon" class="hub-icon fas fa-cog normal fa-2x"></i>
+                    <p class="p-menu pa" id="p_0" status="invisible">Menu</p>	
+                </li>
+                <li class = "list-element element" status="closed" id="element_1">
+                    <i id="icon-orario" class="icon fas fa-th fa-3x"></i>
+                    <p class="p-orario pa" id="p_1" status="invisible">Orario</p>
+                </li>
+                <li class = "list-element element" status="closed" id="element_2">
+                    <i id="icon-compiti" class="icon fas fa-address-book fa-3x"></i>
+                    <p class="p-compiti pa" id="p_2" status="invisible">Compiti</p>
+                </li>
+                <li class = "list-element element" status="closed" id="element_3">
+                    <i id="icon-timer" class="icon fas fa-clock fa-3x"></i>
+                    <p class="p-timer pa" id="p_3" status="invisible">Timer</p>
+                </li>
+        
+            </ul>
+        </div>
+    
+
+    </div>
+    
+    <script src="app.js"></script>
+    <script>
+        function delete_tab(n){
+            document.getElementsByClassName('tab_' + n).item(0).setAttribute('status', 'hidden');
+        }
+    </script>
+
+</body>
